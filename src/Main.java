@@ -52,15 +52,38 @@ public class Main {
         // task 5
         System.out.println("Task 5");
         byte monthNumber = 12;
-        if (monthNumber <= 2 && monthNumber == 12) {
-            System.out.println("Сейчас зимний сезон");
-        } else if (monthNumber >=3 && monthNumber <=5) {
-            System.out.println("Сейчас весенний сезон");
-        } else if (monthNumber >=6 && monthNumber <=8) {
-            System.out.println("Сейчас летний сезон");
-        } else if (monthNumber >=9 && monthNumber <=11) {
-            System.out.println("Сейчас осенний сезон");
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("Зимний период");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весенний период");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Летний период");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осенний период");
+                break;
         }
+
+//        if (monthNumber <= 2 && monthNumber == 12) {
+//            System.out.println("Сейчас зимний сезон");
+//        } else if (monthNumber >=3 && monthNumber <=5) {
+//            System.out.println("Сейчас весенний сезон");
+//        } else if (monthNumber >=6 && monthNumber <=8) {
+//            System.out.println("Сейчас летний сезон");
+//        } else if (monthNumber >=9 && monthNumber <=11) {
+//            System.out.println("Сейчас осенний сезон");
+//        }
     }
 
     }
